@@ -1,0 +1,22 @@
+{
+  "name": "webpack-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/padsbanger/webpack-learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/padsbanger/webpack-learning/issues"
+  },
+  "homepage": "https://github.com/padsbanger/webpack-learning#readme",
+  "devDependencies": {
+    "webpack": "^2.2.0-rc.0"
+  }
+}
