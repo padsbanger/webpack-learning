@@ -1,8 +1,11 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
-  entry: './src/index.js',
+  entry:  {
+    app : ['./src/index.js']
+  },
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
@@ -22,7 +25,8 @@ const config = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('style.css')
+    new ExtractTextPlugin('style.css'),
+    new HtmlWebpackPlugin()
   ]
 };
 
